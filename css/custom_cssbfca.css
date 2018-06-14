@@ -1,0 +1,20 @@
+
+
+.full_screen_navigation_holder.up_arrow {
+    bottom: 30px;
+    display: inline-block;
+    left: 50%;
+    position: fixed;
+    top: auto;
+    transform: translateX(-150%);
+    width: auto;
+}
+
+.full_screen_navigation_holder.down_arrow {
+    bottom: 30px;
+    display: inline-block;
+    left: 50%;
+    position: fixed;
+    transform: translateX(50%);
+    width: auto;
+}
