@@ -238,7 +238,21 @@ img.emoji {
 <div><input type="submit" value="CONTACT US" class="wpcf7-form-control wpcf7-submit" /></div>
 <div class="wpcf7-response-output wpcf7-display-none"></div></form>--></div></div></div></div>
 
-<div class='q_elements_item' data-animation='no' style='vertical-align:top;'><div class='q_elements_item_inner'><div class='q_elements_item_content' style='padding:0 0 0 0'><div class='google_map_shortcode_holder' style='height:1100px;'><div class='qode_google_map' style='height:1100px;' id='map_canvas_63243' data-addresses='["349 Paramount Dr, Raynham, Massachusetts"]' data-custom-map-style='true' data-color-overlay='#393939' data-saturation='-100' data-lightness='10' data-zoom='7' data-pin='img/pin.png' data-unique-id='63243' data-google-maps-scroll-wheel='false' data-map-height='1100'></div><div class='google_map_shortcode_overlay'></div></div></div></div></div></div>
+<div class='q_elements_item' data-animation='no' style='vertical-align:top;'>
+<div class='q_elements_item_inner'>
+<div class='q_elements_item_content' style='padding:0 0 0 0'>
+<div class='google_map_shortcode_holder' style='height:1100px;' id="map">
+
+
+</div>
+<!--
+<div class='google_map_shortcode_holder' style='height:1100px;'>
+<div class='qode_google_map' style='height:1100px;' id='map_canvas_63243' data-addresses='["349 Paramount Dr, Raynham, Massachusetts"]' data-custom-map-style='true' data-color-overlay='#393939' data-saturation='-100' data-lightness='10' data-zoom='7' data-pin='img/pin.png' data-unique-id='63243' data-google-maps-scroll-wheel='false' data-map-height='1100'></div><div class='google_map_shortcode_overlay'></div>
+</div>
+-->
+</div>
+</div>
+</div></div>
 		</div> 
 	</div> 
 </div></div>
@@ -256,6 +270,21 @@ img.emoji {
 	
 </div>
 </div>
+<script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 41.899, lng: -71.031};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 7, center: uluru, 
+          gestureHandling: 'none',
+          zoomControl: false});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+
 <script type='text/javascript' src='plugins/anti-spam/js/anti-spam-4.4.js'></script>
 
 <script type='text/javascript' src='js/qode-like.min4189.js?ver=4.2.4'></script>
